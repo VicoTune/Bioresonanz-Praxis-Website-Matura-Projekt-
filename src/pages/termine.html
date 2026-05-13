@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Termin buchen – CH70</title>
+
+  <link rel="stylesheet" href="/src/css/styles.css" />
+  <script defer src="/src/js/include.js"></script>
+</head>
+
+<body>
+
+<header id="site-header"></header>
+
+<main class="page">
+
+  <section class="booking-page">
+    <div class="container booking-container">
+
+      <a href="/src/index.html" class="booking-back">← Zurück</a>
+
+      <h1 class="booking-main-title">Service buchen</h1>
+      <p class="booking-main-subtitle">
+        Jetzt verfügbare Termine auswählen und eine Buchungsanfrage senden.
+      </p>
+
+      <div class="booking-layout">
+
+        <div class="booking-calendar-area">
+          <h2>Datum und Uhrzeit wählen</h2>
+
+          <div class="booking-month-bar">
+            <button type="button" class="booking-month-arrow">‹</button>
+           <div class="booking-month-title" id="monthTitle">April 2026</div>
+            <button type="button" class="booking-month-arrow">›</button>
+          </div>
+
+          <div class="booking-calendar-content">
+
+            <div class="booking-calendar-left">
+              <div class="booking-weekdays">
+                <span>Mo</span><span>Di</span><span>Mi</span><span>Do</span><span>Fr</span><span>Sa</span><span>So</span>
+              </div>
+
+              <div class="booking-days-grid" id="bookingDays">
+                <button type="button" data-date="20. April 2026">20</button>
+                <button type="button" data-date="21. April 2026">21</button>
+                <button type="button" data-date="22. April 2026">22</button>
+                <button type="button" data-date="23. April 2026">23</button>
+                <button type="button" data-date="24. April 2026">24</button>
+                <button type="button" data-date="27. April 2026">27</button>
+                <button type="button" data-date="28. April 2026">28</button>
+                <button type="button" data-date="29. April 2026">29</button>
+                <button type="button" data-date="30. April 2026">30</button>
+              </div>
+            </div>
+
+            <div class="booking-calendar-right">
+              <div class="booking-availability-title" id="availabilityTitle">
+                Bitte zuerst ein Datum wählen
+              </div>
+
+              <div class="booking-time-grid" id="bookingTimes">
+                <button type="button" data-time="09:00">09:00</button>
+                <button type="button" data-time="09:30">09:30</button>
+                <button type="button" data-time="10:00">10:00</button>
+                <button type="button" data-time="10:30">10:30</button>
+                <button type="button" data-time="11:00">11:00</button>
+                <button type="button" data-time="11:30">11:30</button>
+                <button type="button" data-time="12:00">12:00</button>
+                <button type="button" data-time="12:30">12:30</button>
+                <button type="button" data-time="13:00">13:00</button>
+                <button type="button" data-time="13:30">13:30</button>
+                <button type="button" data-time="14:00">14:00</button>
+                <button type="button" data-time="14:30">14:30</button>
+                <button type="button" data-time="15:00">15:00</button>
+                <button type="button" data-time="15:30">15:30</button>
+                <button type="button" data-time="16:00">16:00</button>
+                <button type="button" data-time="16:30">16:30</button>
+                <button type="button" data-time="17:00">17:00</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <aside class="booking-side-area">
+          <h2>Servicedetails</h2>
+
+          <div class="booking-service-name">
+            Kostenlose Beratung im<br>Pongau/Salzburg
+          </div>
+
+          <div class="booking-service-meta" id="bookingSummary">
+            Noch kein Termin ausgewählt.
+          </div>
+
+          <p class="small">
+            Dauer: 20 Minuten<br>
+            Ort: CH70 Bioresonanz Praxis
+          </p>
+
+          <button type="button" class="booking-request-button" id="requestBookingBtn">
+            Buchung anfragen
+          </button>
+
+          <p id="bookingHint" class="form-status error"></p>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer"></footer>
+
+</body>
+</html>
